@@ -16,6 +16,7 @@
     "react": "^18.2.0",
     "react-admin": "file:",
     "react-dom": "^18.2.0",
+    "react-govbr": "file:",
     "react-hook-form": "^7.49.2",
     "react-router-dom": "^6.21.0",
     "react-scripts": "5.0.1",

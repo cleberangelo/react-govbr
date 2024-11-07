@@ -4,8 +4,7 @@ import { Header } from "./header/Header";
 import { Menu } from "./menu/Menu";
 
 export const Layout = () => {
-  // const { isAuthenticated }: any = useAuth();
-  const isAuthenticated = true;
+  const { isAuthenticated }: any = useAuth();
   const headerLogo = "/img/govbr-logo.png";
   const headerTitle = "Aplicação Teste";
   const headerSign = "gov.br";

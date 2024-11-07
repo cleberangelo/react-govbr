@@ -6,6 +6,7 @@ import { ProductPage } from "../page/product/ProductPage";
 import { Home } from "../page/Home";
 import { NotFound } from "../page/NotFound";
 import { Layout } from "../component/Layout";
+import { AuthRequired } from "../auth/AuthRequired";
 
 const Routes = () => {
   const router = createBrowserRouter([
@@ -27,15 +28,15 @@ const Routes = () => {
         },
         {
           path: "home",
-          element: <Home />,
+          element: <AuthRequired><Home /></AuthRequired>,
         },
         {
           path: "product",
-          element: <ProductPage />,
+          element: <AuthRequired><ProductPage /></AuthRequired>,
         },
         {
           path: "logout",
-          element: <Logout />,
+          element: <AuthRequired><Logout /></AuthRequired>,
         },
       ]
     }
